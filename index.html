@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="home-page">
+        <header>
+          <nav>
+            <div class="logo"><span>S</span>andeep...</div>
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="#skill-page">Skill</a></li>
+              <li><a href="#contact-page">Contact</a></li>
+              <li><i class="fa-solid fa-moon"></i></li>
+              <div class="close">+</div>
+            </ul>
+          </nav>
+        </header>
+
+        <section>
+          <div class="container">
+            <div class="hero-section">
+              <div class="hero-left">
+                <h1>Hello,</h1>
+                <h2>My name is <span>Sandeep</span>,</h2>
+                <h2>I am a <span>Frontend Developer</span>,</h2>
+                <a href="assest/profile.png" download
+                  ><button>Download CV</button></a
+                >
+              </div>
+              <div class="hero-right">
+                <img src="assest/profile.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- skill page............ -->
+      <div id="skill-page">
+        <div class="container">
+          <h2><span>S</span>kill</h2>
+          <div class="skill-container">
+            <div class="skill-row">
+              <img src="assest/html.png" alt="" />
+              <h3>HTML 5</h3>
+            </div>
+            <div class="skill-row">
+              <img src="assest/css.png" alt="" />
+              <h3>CSS 3</h3>
+            </div>
+            <div class="skill-row">
+              <img src="assest/js.png" alt="" />
+              <h3>JAVASCRIPT</h3>
+            </div>
+            <div class="skill-row">
+              <img src="assest/react.png" alt="" />
+              <h3>REACT</h3>
+            </div>
+            <div class="skill-row">
+              <img src="assest/bootstrap.png" alt="" />
+              <h3>BOOTSTRAP</h3>
+            </div>
+            <div class="skill-row">
+              <img src="assest/tailwind.webp" alt="" />
+              <h3>TAILWIND</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact page ...............-->
+      <div id="contact-page">
+        <div class="container">
+          <h2><span>C</span>ontact</h2>
+          <div class="contact-flex">
+            <div class="contact-image">
+              <img src="assest/sudent image.jpg" alt="" />
+            </div>
+
+            <form>
+              <h3>Fill Form</h3>
+              <div class="inputs">
+                <input type="text" />
+                <label for=""><span>Full Name</span></label>
+              </div>
+              <div class="inputs">
+                <input type="number" />
+                <label for="">Phone No.</label>
+              </div>
+              <div class="inputs">
+                <input type="email" />
+                <label for="">Email</label>
+              </div>
+
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

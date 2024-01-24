@@ -1,0 +1,143 @@
+@media only screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+      gap: 6rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @media only screen and (max-width: 980px) {
+    .container {
+      padding: 0 4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 0 5rem;
+    }
+    .menu i {
+      display: block;
+      font-size: 20px;
+    }
+    header {
+      padding: 1.5rem 5rem;
+      box-shadow: 0 0 20px #eee;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -150px;
+      box-shadow: 0 0 20px #cccccc;
+      min-height: 100%;
+      width: 250px;
+      padding: 70px 0 ;
+    }
+    nav ul li {
+      width: 60px;
+      margin: 20px 30px;
+      transition: all 0.5s;
+    }
+    nav ul li:hover {
+      color: rgb(255, 179, 0);
+    }
+  
+    nav ul li::after {
+      display: none;
+    }
+    .hero-section {
+      flex-direction: column-reverse;
+      gap: 30px;
+      margin: 1.5rem 0;
+      padding: 1.5rem 0;
+    }
+    .hero-left {
+      align-items: center;
+    }
+    .hero-right img {
+      display: block;
+      width: 60vw;
+      margin: 0 auto;
+    }
+    .close {
+      display: block;
+    }
+    .hero-right img {
+      width: 30vw;
+    }
+    .contact-flex {
+      flex-direction: column;
+      align-items: center;
+      gap: 0rem;
+    }
+    .contact-image img {
+      display: none;
+    }
+    #contact-page form {
+      width: 70vw;
+    }
+    .skill-container {
+      width: 70vw;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+    header {
+      padding: 1.3rem 4rem;
+    
+    }
+    nav ul {
+      width: 200px;
+      padding: 70px 80px;
+    }
+    nav ul li{
+      margin: 20px auto;
+    }
+    
+    .hero-left h2 {
+      text-align: center;
+    }
+    .hero-right img {
+      width: 50vw;
+    }
+    #contact-page form {
+      width: 80vw;
+      margin: 0;
+    }
+    form label {
+      left: 10px;
+      top: 10px;
+    }
+    form button {
+      width: 30%;
+      font-size: 14px;
+    }
+    .contact-flex {
+      gap: 0rem;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    nav ul {
+      width: 100%;
+      padding: 70px 80px;
+    }
+    .skill-container {
+      width: 60vw;
+  
+      display: grid;
+      place-items: center;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+  }
