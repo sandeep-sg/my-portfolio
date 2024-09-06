@@ -18,6 +18,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background: #fcfcfc;
 }
 a {
   text-decoration: none;
@@ -30,10 +31,13 @@ li {
   max-width: 1526px;
   margin: auto;
 }
+p{
+  word-wrap: break-word;
+}
 
 header {
   width: 100%;
-  height: 70px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,27 +54,49 @@ nav ul {
 nav ul li {
   font-weight: 500;
   color: white;
+  position: relative;
+}
+nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li:hover::after {
+  width: 100%;
 }
 nav ul li a {
   color: white;
 }
-
 .hero-section {
-  color: #088395;
-  padding: 157px 80px 170px;
+  padding: 130px 80px 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .hero-section .left h1 {
   margin: 4px 0;
-  font-size: 40px;
+  font-size: 36px;
+  color: #088395;
+}
+.hero-section .left .social-meida-links {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+.hero-section .left .social-meida-links a {
+  color: #088395;
 }
 .hero-section .left .cv-btn {
   border: none;
   padding: 10px 20px;
   border-radius: 500px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 600;
   cursor: pointer;
   border: 1px solid #088395;
@@ -123,7 +149,7 @@ nav ul li a {
 
 /* About sectin css ....................................................*/
 .about-section {
-  padding: 40px 80px 60px;
+  padding: 40px 80px;
 }
 .about-flex {
   display: flex;
@@ -153,7 +179,7 @@ nav ul li a {
 }
 /* skill-section css ................................................*/
 .skill-section {
-  padding: 40px 80px 60px;
+  padding: 40px 80px;
 }
 .skill-section h2 {
   text-align: center;
@@ -190,7 +216,7 @@ nav ul li a {
 }
 /*project-section css ...............................................*/
 .project-section {
-  padding: 40px 80px 60px;
+  padding: 40px 80px;
 }
 .project-section h2 {
   color: #e41352;
@@ -198,26 +224,43 @@ nav ul li a {
   font-size: 40px;
   margin-bottom: 20px;
 }
-.project-grid {
-  display: grid;
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: auto auto auto;
-  gap: 70px;
+  gap: 40px;
+  margin-top: 30px;
 }
-.project-grid .grid-item {
-  width: 360px;
-  height: 260px;
+.project-flex .flex-item {
+  width: 380px;
+  max-height:min-content;
+  padding: 20px;
+  border: 1px solid #cfcfcf;
   border-radius: 10px;
-  overflow: hidden;
+  transition: all 0.2s ease;
 }
-.project-grid .grid-item img {
+.flex-item .project-details p{
+ color: #626262;
+ margin: 15px 0 10px;
+}
+.project-flex .flex-item:hover {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #ddd;
+}
+.project-flex .flex-item img {
   width: 100%;
-  height: 100%;
+  height: 200px;
+  border-radius: 5px;
   object-fit: cover;
+}
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 /* contact-section css............................................... */
 .contact-section {
-  padding: 40px 80px 60px;
+  padding: 40px 80px;
 }
 .contact-section h2 {
   text-align: center;
@@ -270,12 +313,27 @@ textarea {
 }
 /* footer css................................................*/
 footer {
-  background: #088395;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  background: #F3F7EC;
   padding: 16px 0;
-  color: white;
+  color: #06cbb1;
 }
-footer .copyright {
-  text-align: center;
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+footer .footer-links a {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #06cbb1;
 }
 
 /* media query............................................ */
@@ -323,6 +381,8 @@ footer .copyright {
 
   /* about section ..................................*/
   .about-section,
+  .skill-section,
+  .project-section,
   .contact-section {
     padding: 30px 40px 50px;
   }
@@ -413,5 +473,8 @@ footer .copyright {
   .contact-section .left form {
     min-width: 360px;
     margin-top: 25px;
+  }
+  .project-flex .flex-item {
+    min-width: 320px;
   }
 }
