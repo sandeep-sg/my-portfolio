@@ -1,3 +1,4 @@
+
 function heroSectionAnimation() {
     gsap.from("nav ul li", {
       y: -30,
@@ -10,6 +11,16 @@ function heroSectionAnimation() {
       delay: 0.5,
       opacity: 0,
       stagger: 0.5,
+    });
+    gsap.from(".social-meida-links a", {
+      y:50,
+      delay: 0.7,
+      opacity: 0,
+      stagger: 0.5,
+    });
+    gsap.from(".cv-btn", {
+      delay: 2,
+      opacity: 0,
     });
     gsap.from(".hero-section .right img", {
       x: 100,

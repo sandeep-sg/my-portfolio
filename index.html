@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="in">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,170 +14,183 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="max-width">
-      <div class="logo">Portfolio.</div>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="small-screen-nav" >
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="fa-solid fa-square-xmark" id="close-menu"></i>
+    <header >
+      <div class="header-container max-width">
+        <div class="logo">Portfolio.</div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="small-screen-nav" >
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fa-solid fa-square-xmark" id="close-menu"></i>
+        </div>
+        <i class="fa-solid fa-bars" id="humburger"></i>
       </div>
-      <i class="fa-solid fa-bars" id="humburger"></i>
+     
     </header>
     <main>
-      <section class="hero-section max-width" >
-        <div class="left">
-          <h1>Hello,</h1>
-          <h1>My name is Sandeep,</h1>
-          <h1>I am a Frontend Developer</h1>
-          <div class="social-meida-links">
-           <a href="https://github.com/sandeep-sg" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
-           <a href="https://www.linkedin.com/in/sandeep-gautam-527326263/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-lg fa-linkedin"></i></i></a>      
-          </div>
-          <button class="cv-btn">Download CV</button>
-        </div>
-
-        <div class="right">
-          <img
-            src="/portfolio-assest/web development.png"
-            alt=""
-          />
-        </div>
-      </section>
-      <section class="about-section max-width" id="about">
-        <h2>About</h2>
-        <div class="about-flex">
+      <section class="hero-section" >
+        <div class="hero-container max-width">
           <div class="left">
+            <h1>Hello,</h1>
+            <h1>I'm Sandeep,</h1>
+            <h1>I'm a Frontend Developer</h1>
+            <div class="social-meida-links">
+             <a href="https://github.com/sandeep-sg" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
+             <a href="https://www.linkedin.com/in/sandeep-gautam-527326263/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-lg fa-linkedin"></i></i></a>      
+            </div>
+            <button class="cv-btn">Download CV</button>
+          </div>
+  
+          <div class="right">
             <img
-              src="/portfolio-assest/about.png"
-              alt=""
+              src="/portfolio-assest/web development.png"
+              alt="Development"
             />
           </div>
-          <div class="right">
-            <h3>Introduction</h3>
-            <p>
-              My name is sandeep.I have completed Advance Diploma in Information
-              Technology & System Management course (ADITSM) and currently study
-              in BCA from IGNOU and I am intersting in creating creative
-              websites and I have created so many project related to frontend
-              development which is mention in project section.
-            </p>
-          </div>
         </div>
+       
       </section>
-      <section class="skill-section max-width" id="skill">
-        <h2>Skill</h2>
-        <div class="skill-grid">
-          <div class="box"><i class="fa-brands fa-html5" style="color: #E44D26;"></i><span>HTML5</span></div>
-          <div class="box"><i class="fa-brands fa-css3-alt" style="color: #0874BC;"></i><span>CSS3</span></div>
-          <div class="box"><i class="fa-brands fa-js" style="color: #EFD81D;"></i><span>JAVASCRIPT</span></div>
-          <div class="box"><i class="fa-brands fa-react" style="color: #08bffd;"></i><span>REACT</span></div>
-          <div class="box"><img src="./portfolio-assest/tailwind.png" class="tailwind-logo" alt="tailwind css logo"><span>TAILWIND CSS</span></div>
-        </div>
-      </section>
-      <section class="project-section max-width" id="project">
-        <h2>Projects</h2>
-        <div class="project-flex">
-          <div class="flex-item project-1">
-            <a href="https://tic-tac-toe-mygame.vercel.app/" target="_blank">
-              <img src="portfolio-assest/tic-tac-toe-thumbnail.png" alt="">
-            </a>
-            <div class="project-details">
-              <p>This is a Tic Tac Toe game. I have made this game using HTML,CSS and JAVASCRIPT</p>
-            </div>
-            <div class="project-links ">
-              <span class="github-link">
-                <a href="https://github.com/sandeep-sg/tic-tac-toe-game" target="_blank"><i class="fa-brands fa-lg fa-github"></i></a>
-              </span>
-              <span class="live-link">
-                <a href="https://tic-tac-toe-mygame.vercel.app/" target="_blank"><svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20" style="color:currentColor;width:18px;height:18px;margin-top: 6px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a>
-              </span>
-            </div>
-          </div>
-          <div class="flex-item project-2">
-            <a href="https://todo-app-iota-self.vercel.app/" target="_blank">
-              <img src="/portfolio-assest/todo_thumbnail.png" alt="">
-            </a>
-            <div class="project-details">
-              <p>This is a Todo app. I have made this project using HTML, Tailwind CSS,Javascript.And I have used local storage for store the user data. </p>
-            </div>
-            <div class="project-links">
-              <span class="github-link">
-                <a href="https://github.com/sandeep-sg/todo-app" target="_blank"><i class="fa-brands fa-lg fa-github"></i></a>
-              </span>
-              <span class="live-link">
-                <a href="https://todo-app-iota-self.vercel.app/" target="_blank"><svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20" style="color:currentColor;width:18px;height:18px;margin-top: 6px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a>
-              </span>
-            </div>
-          </div>
-          <div class="flex-item project-3">
-            <a href="https://currency-exchange-rate-azure.vercel.app" target="_blank">
-              <img src="/portfolio-assest/currency converter thumbnail.png" alt="">
-            </a>
-            <div class="project-details">
-              <p>This is currency converter website .I have made this project using HTML,CSS and Javascript.And I have used <b>currencyapi.com</b> API for get the current currency exchange rate. </p>
-            </div>
-            <div class="project-links">
-              <span class="github-link">
-                <a href="https://github.com/sandeep-sg/currency-exchange-rate" target="_blank"><i class="fa-brands fa-lg fa-github"></i></a>
-              </span>
-              <span class="live-link">
-                <a href="https://currency-exchange-rate-azure.vercel.app/" target="_blank"><svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20" style="color:currentColor;width:18px;height:18px;margin-top: 6px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact-section max-width" id="contact">
-        <h2>Contact</h2>
-        <div class="contact-flex">
-          <div class="left">
-            <form action="https://api.web3forms.com/submit" method="POST" novalidate>
-              <h3>Let's connect</h3>
-               <input
-                type="hidden"
-                name="access_key"
-                value="de2d64fc-e3c6-42f3-9c1f-30c71a0350b7"
+      <section class="about-section " id="about">
+        <div class="about-container max-width">
+          <h2>About</h2>
+          <div class="about-flex">
+            <div class="left">
+              <img
+                src="/portfolio-assest/about.png"
+                alt="About"
               />
-              <div class="name input-container">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter name"/>
-                <div class="name-error error"></div>
-              </div>
-              <div class="email input-container">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter email"/>
-                <div class="email-error error"></div>
-              </div>
-              <div class="message input-container">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"placeholder="Enter message"></textarea>
-                <div class="message-error error"></div>
-              </div>
-              <input type="submit" value="Send" id="submitBtn" />
-            </form>
+            </div>
+            <div class="right">
+              <p>
+                My name is Sandeep. I have completed the Advance Diploma in Information Technology & System Management course (ADITSM) and currently study BCA from IGNOU. I am interested in creating creative websites, and I have created so many projects related to frontend development, which are mentioned in the project section.
+              </p>
+            </div>
           </div>
-          <div class="right">
-            <img
+        </div>
+      
+      </section>
+      <section class="skill-section " id="skill">
+        <div class="skill-container max-width"> <h2>Skill</h2>
+          <div class="skill-grid">
+            <div class="box"><i class="fa-brands fa-html5" style="color: #E44D26;"></i><span>HTML5</span></div>
+            <div class="box"><i class="fa-brands fa-css3-alt" style="color: #0874BC;"></i><span>CSS3</span></div>
+            <div class="box"><i class="fa-brands fa-js" style="color: #EFD81D;"></i><span>JAVASCRIPT</span></div>
+            <div class="box"><i class="fa-brands fa-react" style="color: #08bffd;"></i><span>REACT</span></div>
+            <div class="box"><img src="./portfolio-assest/tailwind.png" class="tailwind-logo" alt="tailwind css logo"><span>TAILWIND CSS</span></div>
+            <div class="box"><i class="fa-brands fa-git-alt" style="color:#F74E27;"></i></i><span>GIT</span></div>
+            <div class="box"><i class="fa-brands fa-github"></i><span>GITHUB</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="project-section " id="project">
+        <div class="project-container max-width"> <h2>Projects</h2>
+          <div class="project-flex">
+            <div class="flex-item project-1">
+              <a href="https://tic-tac-toe-mygame.vercel.app/" target="_blank">
+                <img src="portfolio-assest/tic-tac-toe-thumbnail.png" alt="">
+              </a>
+              <div class="project-details">
+                <p>This is a Tic Tac Toe game. I have made this game using HTML,CSS and JAVASCRIPT</p>
+              </div>
+              <div class="project-links ">
+                <span class="github-link">
+                  <a href="https://github.com/sandeep-sg/tic-tac-toe-game" target="_blank"><i class="fa-brands fa-lg fa-github"></i></a>
+                </span>
+                <span class="live-link">
+                  <a href="https://tic-tac-toe-mygame.vercel.app/" target="_blank"><svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20" style="color:currentColor;width:18px;height:18px;margin-top: 6px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a>
+                </span>
+              </div>
+            </div>
+            <div class="flex-item project-2">
+              <a href="https://todo-app-iota-self.vercel.app/" target="_blank">
+                <img src="/portfolio-assest/todo_thumbnail.png" alt="">
+              </a>
+              <div class="project-details">
+                <p>This is a Todo app. I have made this project using HTML, Tailwind CSS,Javascript.And I have used local storage for store the user data. </p>
+              </div>
+              <div class="project-links">
+                <span class="github-link">
+                  <a href="https://github.com/sandeep-sg/todo-app" target="_blank"><i class="fa-brands fa-lg fa-github"></i></a>
+                </span>
+                <span class="live-link">
+                  <a href="https://todo-app-iota-self.vercel.app/" target="_blank"><svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20" style="color:currentColor;width:18px;height:18px;margin-top: 6px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a>
+                </span>
+              </div>
+            </div>
+            <div class="flex-item project-3">
+              <a href="https://currency-exchange-rate-azure.vercel.app" target="_blank">
+                <img src="/portfolio-assest/currency converter thumbnail.png" alt="">
+              </a>
+              <div class="project-details">
+                <p>This is currency converter website .I have made this project using HTML,CSS and Javascript.And I have used <b>currencyapi.com</b> API for get the current currency exchange rate. </p>
+              </div>
+              <div class="project-links">
+                <span class="github-link">
+                  <a href="https://github.com/sandeep-sg/currency-exchange-rate" target="_blank"><i class="fa-brands fa-lg fa-github"></i></a>
+                </span>
+                <span class="live-link">
+                  <a href="https://currency-exchange-rate-azure.vercel.app/" target="_blank"><svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="20" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20" style="color:currentColor;width:18px;height:18px;margin-top: 6px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="contact-container  max-width">
+          <h2>Contact</h2>
+          <div class="contact-flex">
+            <div class="right">
+              <img
               src="/portfolio-assest/contact.png"
               alt=""
-            />
+              />
+            </div>
+            <div class="left">
+              <form action="https://api.web3forms.com/submit" method="POST" novalidate>
+                <h3>Let's connect</h3>
+                 <input
+                  type="hidden"
+                  name="access_key"
+                  value="de2d64fc-e3c6-42f3-9c1f-30c71a0350b7"
+                />
+                <div class="name input-container">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter name"/>
+                  <div class="name-error error"></div>
+                </div>
+                <div class="email input-container">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter email"/>
+                  <div class="email-error error"></div>
+                </div>
+                <div class="message input-container">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message"placeholder="Enter message"></textarea>
+                  <div class="message-error error"></div>
+                </div>
+                <input type="submit" value="Send" id="submitBtn" />
+              </form>
+            </div>
           </div>
         </div>
+       
       </section>
     </main>
-    <footer class="max-width">
+    <footer class="">
+      <div class="footer-container max-width">
         <div class="footer-links">
           <a href="https://github.com/sandeep-sg" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
           <a href="https://www.linkedin.com/in/sandeep-gautam-527326263/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-lg fa-linkedin "></i></i></a>      
@@ -185,6 +198,7 @@
          <div class="copyright">
           Sandeep &#169 2024
         </div>
+      </div>     
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="script.js"></script>
